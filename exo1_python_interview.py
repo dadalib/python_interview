@@ -132,6 +132,19 @@ def while_to_ten():
         print(i)
         i+=1
 
+# Heritage needs to be done
+class Compute():
+    def __init__(self,ram,storage):
+        print("RAM=",ram)
+        print("Storage=",storage)
+
+class Laptop(Compute):
+    def __init__(self,ram,storage,model):
+        print("Model is:",model)
+        super().__init__(ram,storage)
+
+    
+
 
 
 
