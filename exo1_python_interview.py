@@ -143,6 +143,40 @@ class Laptop(Compute):
         print("Model is:",model)
         super().__init__(ram,storage)
 
+"""Write a code to create a for loop that iterates through a tuple of class objects. 
+Then call the methods without being concerned about which class type each object is?
+"""
+# exercice 55
+class Shape:
+    def __init__(self):
+        print('I am a shape')
+        
+class Rect(Shape):
+    def myself(self):
+        print("Myself rectangle")
+
+class Sqrt(Shape):
+    def myself(self):
+        print("Myself square")
+
+class Robot():
+    def __init__(self,name=None):
+        self.name = name
+
+    def say_hi(self):
+        if self.name:
+            print("Hello, I am "+ self.name)
+
+        else:
+            print("Hello I am robot without name")
+
+    def set_name(self,name):
+        self.name = name
+    
+    def get_name(self):
+        return self.name
+
+
     
 
 
@@ -165,7 +199,17 @@ if __name__ =="__main__":
     # prime_numbers()
     # print_values_tuples()
     # print(draw_stars())
-    print(while_to_ten())
+    # print(while_to_ten())
+    # print(issubclass(Laptop, Compute))
+    # r  = Rect()
+    # s = Sqrt()
+
+    # for sh in (r,s):
+
+    #     sh.myself()
+    robot = Robot()
+    robot.set_name("Puto")
+    robot.say_hi()
 
 
 
