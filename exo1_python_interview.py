@@ -1,6 +1,7 @@
 import keyword
 import random
 from unittest import result
+import mysql.connector
 
 def question_out_put(str):
     return str,str[0],str*2
@@ -207,6 +208,7 @@ if __name__ =="__main__":
     # for sh in (r,s):
 
     #     sh.myself()
+    
     robot = Robot()
     robot.set_name("Puto")
     robot.say_hi()

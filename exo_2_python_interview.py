@@ -6,6 +6,9 @@ from functools import partial
 import threading
 import time
 import re
+import mysql.conector
+
+
 
 exitFlag = 0
 
